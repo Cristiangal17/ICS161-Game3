@@ -3,8 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterMove : MonoBehaviour {
+
+
     public int jump;
     public int walk;
+
+	[SyncVar]
+	public string playerName = "player";
+
+	[SyncVar]
+	public Color playerColor = Color.white;
+
+
+
 
     private bool isFacingForward;
 
